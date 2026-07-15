@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Header from "@/components/Header/Header";
+import Content from "@/components/Content/Content";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-    </div>
+    <main className={styles.main}>
+      <Header />
+      <Content />
+    </main>
   );
 }

@@ -1,10 +1,11 @@
 /* Mobile (default) */
-
+.content {
+  height: 2000px;
+}
 
 /* Large phones / small tablets */
 @media (min-width: 36rem) {
   /* 576px */
-
 }
 
 /* Tablets */
@@ -15,10 +16,8 @@
 /* Laptops */
 @media (min-width: 64rem) {
   /* 1024px */
-  .main {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+  .content {
+    width: 52%;
   }
 }
 
