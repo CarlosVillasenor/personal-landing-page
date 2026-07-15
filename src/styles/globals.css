@@ -13,6 +13,8 @@
   }
 } */
 
+
+
 html {
   height: 100%;
 }
@@ -22,10 +24,11 @@ html, body {
   overflow-x: hidden;
 }
 
-
 body {
   margin: 0;
   background: transparent;
+  font-family: var(--font-family);
+  font-size: var(--font-md);
 }
 
 body::before {
