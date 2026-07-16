@@ -1,5 +1,7 @@
 /* Mobile (default) */
-
+.main {
+  padding: 2rem;
+}
 
 /* Large phones / small tablets */
 @media (min-width: 36rem) {

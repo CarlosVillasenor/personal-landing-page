@@ -1,18 +1,24 @@
 import styles from "./Header.module.css";
+import Image from "next/image";
 
 const navigationItems = [
   { href: "#about", label: "About", active: true },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
 ];
 
 const socialLinks = [
-  { href: "#", label: "GitHub", icon: "GH" },
-  { href: "#", label: "LinkedIn", icon: "in" },
-  { href: "#", label: "CodePen", icon: "CP" },
-  { href: "#", label: "Instagram", icon: "IG" },
-  { href: "#", label: "Goodreads", icon: "g" },
+  {
+    href: "https://github.com/CarlosVillasenor",
+    label: "GitHub", icon: "GH"
+  },
+  {
+    href: "https://www.linkedin.com/in/carlos-villase%C3%B1or-castillo-6245a0173/",
+    label: "LinkedIn", icon: "in"
+  },
+  {
+    href: "https://www.instagram.com/carlosvc.9/", label: "Instagram", icon: "IG"
+  },
 ];
 
 export default function Header() {
@@ -28,7 +34,9 @@ export default function Header() {
             Villaseñor
           </h1>
 
-          <p className={styles.role}>Senior Frontend Developer</p>
+          <p className={styles.role}>
+            Senior Frontend Developer
+          </p>
 
           <p className={styles.pitch}>
             I build fast, accessible and scalable web applications with clean code
@@ -52,7 +60,7 @@ export default function Header() {
         <footer className={styles.socials} aria-label="Social links">
           {socialLinks.map((link) => (
             <a key={link.label} href={link.href} aria-label={link.label}>
-              {link.icon}
+              <Image src={`/tech-icons/${link.label}.svg`} alt={link.label} width={24} height={24} />
             </a>
           ))}
         </footer>

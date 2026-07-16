@@ -24,6 +24,7 @@
   line-height: 0.95;
   letter-spacing: -0.04em;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .role {
@@ -31,6 +32,7 @@
   font-size: clamp(1.05rem, 3.8vw, 1.6rem);
   line-height: 1.35;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .pitch {
@@ -38,6 +40,7 @@
   color: var(--color-text-secondary);
   font-size: clamp(1rem, 3.3vw, 1.2rem);
   line-height: 1.75;
+  margin-bottom: 2rem;
 }
 
 .nav {
@@ -87,7 +90,7 @@
 
 .socials {
   display: inline-flex;
-  justify-content: center;
+  justify-content: end;
   gap: var(--space-4);
   padding-top: var(--space-4);
   color: var(--color-icon);
