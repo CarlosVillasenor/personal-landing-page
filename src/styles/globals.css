@@ -46,7 +46,7 @@ body::before {
 }
 
 a {
-  color: inherit;
+  color: var(--color-primary);
   text-decoration: none;
 }
 

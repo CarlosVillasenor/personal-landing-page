@@ -18,9 +18,39 @@
 @media (min-width: 64rem) {
   /* 1024px */
   .main {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+    --layout-header-width: clamp(24rem, 31vw, 30rem);
+    padding: var(--space-8);
+    display: block;
+    position: relative;
+  }
+
+  .main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--space-8) + var(--layout-header-width) + var(--space-7));
+    width: 1px;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      var(--color-border) 12%,
+      var(--color-border) 88%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+
+  .main > :first-child {
+    position: fixed;
+    top: var(--space-8);
+    left: var(--space-8);
+    width: var(--layout-header-width);
+    height: calc(100dvh - var(--space-8) - var(--space-8));
+  }
+
+  .main > :last-child {
+    margin-left: calc(var(--layout-header-width) + 400px);
   }
 }
 
