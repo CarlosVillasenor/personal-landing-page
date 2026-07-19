@@ -18,12 +18,13 @@
 @media (min-width: 64rem) {
   /* 1024px */
   .main {
-    --layout-header-width: clamp(24rem, 31vw, 30rem);
+    --layout-header-width: 28rem;
     padding: var(--space-8);
     display: block;
     position: relative;
   }
-
+  
+  /* Vertical line */
   .main::after {
     content: "";
     position: fixed;
@@ -41,6 +42,7 @@
     pointer-events: none;
   }
 
+  /* Header */
   .main > :first-child {
     position: fixed;
     top: var(--space-8);
@@ -49,6 +51,7 @@
     height: calc(100dvh - var(--space-8) - var(--space-8));
   }
 
+  /* Content */
   .main > :last-child {
     margin-left: calc(var(--layout-header-width) + 400px);
   }
@@ -57,6 +60,9 @@
 /* Large desktops */
 @media (min-width: 80rem) {
   /* 1280px */
+  .main {
+    --layout-header-width: 30rem;
+  }
 }
 
 /* Wide screens */

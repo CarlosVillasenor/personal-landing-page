@@ -20,7 +20,7 @@
 
 .name {
   color: var(--color-text);
-  font-size: clamp(2.8rem, 15vw, 4.6rem);
+  font-size: 2.8rem;
   line-height: 0.95;
   letter-spacing: -0.04em;
   font-weight: 700;
@@ -29,7 +29,7 @@
 
 .role {
   color: var(--color-primary);
-  font-size: clamp(1.05rem, 3.8vw, 1.6rem);
+  font-size: 1.125rem;
   line-height: 1.35;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -38,7 +38,7 @@
 .pitch {
   max-width: 22rem;
   color: var(--color-text-secondary);
-  font-size: clamp(1rem, 3.3vw, 1.2rem);
+  font-size: 1rem;
   line-height: 1.75;
   margin-bottom: 2rem;
 }
@@ -171,7 +171,7 @@
   }
 
   .name {
-    font-size: clamp(3.8rem, 8vw, 5.8rem);
+    font-size: 4.6rem;
   }
 
   .role {
@@ -204,7 +204,7 @@
   }
 
   .name {
-    font-size: clamp(3.8rem, 4.6vw, 4.9rem);
+    font-size: 4.9rem;
   }
 
   .nav {
@@ -222,7 +222,7 @@
   }
 
   .name {
-    font-size: clamp(4.2rem, 5vw, 6.4rem);
+    font-size: 6rem;
   }
 
   .pitch {
