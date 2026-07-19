@@ -18,12 +18,12 @@
 @media (min-width: 64rem) {
   /* 1024px */
   .main {
-    --layout-header-width: 28rem;
+    --layout-header-width: 16rem;
     padding: var(--space-8);
     display: block;
     position: relative;
   }
-  
+
   /* Vertical line */
   .main::after {
     content: "";
@@ -53,7 +53,7 @@
 
   /* Content */
   .main > :last-child {
-    margin-left: calc(var(--layout-header-width) + 400px);
+    margin-left: calc(var(--layout-header-width) + var(--space-8));
   }
 }
 
@@ -61,11 +61,14 @@
 @media (min-width: 80rem) {
   /* 1280px */
   .main {
-    --layout-header-width: 30rem;
+    --layout-header-width: 28rem;
   }
 }
 
 /* Wide screens */
 @media (min-width: 96rem) {
   /* 1536px */
+  .main {
+    --layout-header-width: 40rem;
+  }
 }
