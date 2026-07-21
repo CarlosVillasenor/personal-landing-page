@@ -1,0 +1,27 @@
+.section {
+	display: grid;
+	gap: var(--space-5);
+}
+
+.paragraph {
+	line-height: 1.55;
+	font-size: var(--font-lg);
+	color: var(--color-text-secondary);
+}
+
+.link {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+.link:hover {
+	color: var(--color-primary-hover);
+}
+
+/* Laptops */
+@media (min-width: 64rem) {
+	/* 1024px */
+	.paragraph {
+		line-height: 1.62;
+	}
+}
