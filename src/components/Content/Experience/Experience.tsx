@@ -1,6 +1,7 @@
 import styles from './Experience.module.css';
 import Badge from './Badge';
 import { experiences } from './ExperienceData';
+import Link from 'next/link';
 
 export default function Experience() {
   return (
@@ -11,9 +12,13 @@ export default function Experience() {
         <Badge key={experience.company} experience={experience} />
       ))}
 
-      <a href="/curriculum-vitae.pdf" target="_blank" rel="noopener noreferrer">
-        View full curriculum vitae
-      </a>
+      <Link
+        className={styles.cvLink}
+        href="https://drive.google.com/file/d/18Qc_ML2Qe_o3uofCgg6PzFY7oSK-CdqT/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer">
+        <span>Get Curriculum Vitae</span>
+      </Link>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 :root {
   /* Font Families */
-  
+
   --font-family:
     var(--font-inter),
     system-ui,
@@ -81,7 +81,7 @@
   /* Primary */
 
   --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
+  --color-primary-hover: #0084ff;
   --color-primary-light: #dbeafe;
 
   /* Borders */
