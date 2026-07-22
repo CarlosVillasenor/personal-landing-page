@@ -68,6 +68,6 @@ export const experiences = [
       "Bootstrap",
       "Flexbox"
     ],
-    website: "https://hal9000.com/"
+    website: "https://weareautomata.com/"
   }
 ];
