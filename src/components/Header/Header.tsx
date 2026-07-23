@@ -1,25 +1,6 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
-
-const navigationItems = [
-  { href: "#about", label: "About", active: true },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-];
-
-const socialLinks = [
-  {
-    href: "https://github.com/CarlosVillasenor",
-    label: "GitHub", icon: "GH"
-  },
-  {
-    href: "https://www.linkedin.com/in/carlos-villase%C3%B1or-castillo-6245a0173/",
-    label: "LinkedIn", icon: "in"
-  },
-  {
-    href: "https://www.instagram.com/carlosvc.9/", label: "Instagram", icon: "IG"
-  },
-];
+import { navigationItems, socialLinks } from "./headerData";
 
 export default function Header() {
   return (

@@ -1,6 +1,6 @@
 import styles from './Projects.module.css';
 import Badge from './Badge';
-import { projects } from './ProjectsData';
+import { projects } from './projectsData';
 
 export default function Projects() {
   return (

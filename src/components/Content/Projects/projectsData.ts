@@ -1,4 +1,12 @@
-export const projects = [
+type Project = {
+  title: string;
+  description: string;
+  technologies: string[];
+  website: string;
+  image: string;
+};
+
+export const projects: Project[] = [
   {
     title: "Spatial Navigation",
     description:

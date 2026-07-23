@@ -1,6 +1,6 @@
 import styles from './Experience.module.css';
 import Badge from './Badge';
-import { experiences } from './ExperienceData';
+import { experiences } from './experienceData';
 import Link from 'next/link';
 
 export default function Experience() {
