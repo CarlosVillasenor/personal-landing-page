@@ -2,6 +2,7 @@ import styles from './Content.module.css';
 import About from './About/About';
 import Experience from './Experience/Experience';
 import Projects from './Projects/Projects';
+import Footer from './Footer/Footer';
 
 export default function Content() {
   return (
@@ -10,6 +11,7 @@ export default function Content() {
         <About />
         <Experience />
         <Projects />
+        <Footer />
       </div>
     </div>
   );

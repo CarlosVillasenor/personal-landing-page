@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Experience() {
   return (
     <section id="experience" className={styles.section}>
-      <div className={styles.divider} aria-hidden="true" />
+      <div className="divider" aria-hidden="true" />
 
       {experiences.map((experience) => (
         <Badge key={experience.company} experience={experience} />
