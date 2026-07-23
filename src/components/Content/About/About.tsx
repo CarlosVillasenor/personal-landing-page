@@ -1,8 +1,19 @@
 import styles from './About.module.css';
+import Image from 'next/image';
 
 export default function About() {
   return (
     <section id="about" className={styles.section}>
+      <div className={styles.avatarStage}>
+        <Image
+          src="/avatar/avatar.png"
+          alt="About me"
+          width={140}
+          height={140}
+          className={styles.avatar}
+        />
+      </div>
+
       <p className={styles.paragraph}>
         Hi! I'm a Senior Frontend Developer with over 7 years of experience building modern,
         high-performance web applications. I specialize in React and scalable frontend
