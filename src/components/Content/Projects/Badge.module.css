@@ -1,0 +1,18 @@
+.projectImage {
+  height: auto;
+  margin-top: 0 auto;
+  object-fit: cover;
+}
+
+.mask {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-top: 1rem;
+  width: 140px;
+  height: 80px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+}

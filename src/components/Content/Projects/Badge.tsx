@@ -16,15 +16,6 @@ export default function Badge({ project }: { project: project }) {
         <p className={styles.period}>{project.title}</p>
 
         <div className={styles.projectBody}>
-          <h3 className={styles.projectTitle}>
-            {project.description}
-            <span className={styles.projectDot}>-</span>
-            <span
-              className={styles.companyLink}
-            >
-              {project.image}
-            </span>
-          </h3>
 
           <p className={styles.paragraph}>
             {project.description}
@@ -35,8 +26,14 @@ export default function Badge({ project }: { project: project }) {
               <li key={tech}>{tech}</li>
             ))}
           </ul>
-
-          <Image src={`/project-images/${project.image}`} alt={project.title} width={500} height={300} />
+          <div className={styles.mask}>
+            <Image
+              src={`/project-images/${project.image}`}
+              alt={project.title}
+              width={500} height={300}
+              className={styles.projectImage}
+            />
+          </div>
         </div>
       </article>
     </a>
