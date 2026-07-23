@@ -11,6 +11,7 @@ export default function About() {
           width={140}
           height={140}
           className={styles.avatar}
+          loading="eager"
         />
       </div>
 
