@@ -13,16 +13,17 @@ export default function Badge({ project }: { project: project }) {
   return (
     <a className={styles.badgeLink} href={project.website} target="_blank" rel="noopener noreferrer">
       <article className={styles.projectItem}>
-        <p className={styles.period}>{project.title}</p>
-
-        <div className={styles.projectBody}>
+        <div className={styles.projectHeader}>
+          <p className={styles.tittle}>{project.title}</p>
           <Image
             src={`/project-images/${project.image}`}
             alt={project.title}
             width={140} height={80}
             className={styles.projectImage}
           />
+        </div>
 
+        <div className={styles.projectBody}>
           <p className={styles.paragraph}>
             {project.description}
           </p>

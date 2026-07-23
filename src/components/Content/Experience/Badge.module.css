@@ -13,12 +13,11 @@
 
 .experienceItem:hover {
   background: var(--color-badge-background-hover);
-  
 }
 
 .period {
 	color: var(--color-primary);
-	font-size: var(--font-sm);
+	font-size: var(--font-xs);
 	line-height: 1.2;
 	font-weight: var(--font-weight-bold);
 	letter-spacing: 0.02em;
