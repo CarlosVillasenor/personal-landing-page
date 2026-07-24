@@ -3,72 +3,22 @@
   padding: 2rem;
 }
 
-/* Large phones / small tablets */
-@media (min-width: 36rem) {
-  /* 576px */
+/* Large phones / small tablets (576px) */
+@media (min-width: 36rem) {}
 
-}
+/* Tablets (768px) */
+@media (min-width: 48rem) {}
 
-/* Tablets */
-@media (min-width: 48rem) {
-  /* 768px */
-}
-
-/* Laptops */
+/* Laptops (1024px) */
 @media (min-width: 64rem) {
-  /* 1024px */
   .main {
-    --layout-header-width: 16rem;
-    padding: var(--space-8);
-    display: block;
-    position: relative;
-  }
-
-  /* Vertical line */
-  .main::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: calc(var(--space-8) + var(--layout-header-width) + var(--space-7));
-    width: 1px;
-    background: linear-gradient(
-      180deg,
-      transparent 0%,
-      var(--color-border) 12%,
-      var(--color-border) 88%,
-      transparent 100%
-    );
-    pointer-events: none;
-  }
-
-  /* Header */
-  .main > :first-child {
-    position: fixed;
-    top: var(--space-8);
-    left: var(--space-8);
-    width: var(--layout-header-width);
-    height: calc(100dvh - var(--space-8) - var(--space-8));
-  }
-
-  /* Content */
-  .main > :last-child {
-    margin-left: calc(var(--layout-header-width) + var(--space-8));
+      display: flex;
+      padding: 0;
   }
 }
 
-/* Large desktops */
-@media (min-width: 80rem) {
-  /* 1280px */
-  .main {
-    --layout-header-width: 28rem;
-  }
-}
+/* Large desktops (1280px) */
+@media (min-width: 80rem) {}
 
-/* Wide screens */
-@media (min-width: 96rem) {
-  /* 1536px */
-  .main {
-    --layout-header-width: 40rem;
-  }
-}
+/* Wide screens (1536px) */
+@media (min-width: 96rem) {}
