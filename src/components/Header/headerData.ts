@@ -1,7 +1,6 @@
 type navigationItem = {
   href: string;
   label: string;
-  active?: boolean;
 };
 
 type socialLink = {
@@ -11,7 +10,7 @@ type socialLink = {
 };
 
 const navigationItems: navigationItem[] = [
-  { href: "#about", label: "About", active: true },
+  { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
 ];

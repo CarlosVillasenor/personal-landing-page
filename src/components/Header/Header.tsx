@@ -1,8 +1,13 @@
+"use client";
+
 import styles from "./Header.module.css";
 import Image from "next/image";
 import { navigationItems, socialLinks } from "./headerData";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export default function Header() {
+  const activeSection = useActiveSection();
+
   return (
     <header className={styles.header}>
       <div className={styles.headerGlow} aria-hidden="true" />
@@ -26,16 +31,21 @@ export default function Header() {
         </div>
 
         <nav className={styles.nav} aria-label="Primary sections">
-          {navigationItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={`${styles.navItem} ${item.active ? styles.navItemActive : ""}`}
-            >
-              <span className={styles.navRule} aria-hidden="true" />
-              <span>{item.label}</span>
-            </a>
-          ))}
+          {navigationItems.map((item) => {
+            const sectionId = item.href.replace("#", "");
+            const isActive = activeSection === sectionId;
+
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`${styles.navItem} ${isActive ? styles.navItemActive : ""}`}
+              >
+                <span className={styles.navRule} aria-hidden="true" />
+                <span>{item.label}</span>
+              </a>
+            );
+          })}
         </nav>
 
         <footer className={styles.socials} aria-label="Social links">
