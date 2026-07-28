@@ -7,8 +7,6 @@ import styles from "./MobileHeader.module.css";
 export default function MobileHeader() {
 	const activeSection = useActiveSection();
 
-  console.log("activeSection", activeSection);
-
 	return (
 		<header className={styles.wrapper}>
 			<nav className={styles.nav} aria-label="Primary sections">
