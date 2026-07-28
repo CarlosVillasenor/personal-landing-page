@@ -1,3 +1,5 @@
+/* Mobile (default) */
+
 .wrapper {
 	position: sticky;
 	top: var(--space-4);
@@ -28,7 +30,7 @@
 	padding: var(--space-3) var(--space-2);
 	border-radius: 999px;
 	color: var(--color-nav);
-	font-size: var(--font-sm);
+	font-size: var(--font-xs);
 	font-weight: var(--font-weight-semibold);
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -44,12 +46,14 @@
 	color: var(--color-nav-hover);
 }
 
+/* Large phones / small tablets (576px) */
 @media (min-width: 36rem) {
 	.wrapper {
 		top: var(--space-5);
 	}
 }
 
+/* Laptops (1024px) */
 @media (min-width: 64rem) {
 	.wrapper {
 		display: none;
