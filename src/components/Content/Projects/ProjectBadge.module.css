@@ -1,35 +1,44 @@
+.projectImage {
+  border: 1px solid #ccc;
+  width: 140px;
+  height: 80px;
+  border-radius: 4px;
+}
+
 .paragraph {
 	line-height: 1.55;
 	font-size: var(--font-md);
 	color: var(--color-text-secondary);
 }
 
-.experienceItem {
+.projectItem {
 	display: grid;
 	gap: var(--space-5);
   padding: var(--space-5);
   border-radius: var(--space-2);
 }
 
-.experienceItem:hover {
+.projectItem:hover {
   background: var(--color-badge-background-hover);
 }
 
-.period {
+.tittle {
 	color: var(--color-primary);
 	font-size: var(--font-xs);
 	line-height: 1.2;
 	font-weight: var(--font-weight-bold);
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
+  margin-bottom: var(--space-2);
+	margin-top: var(--space-2);
 }
 
-.experienceBody {
+.projectBody {
 	display: grid;
 	gap: var(--space-2);
 }
 
-.experienceTitle {
+.projectTitle {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
@@ -40,7 +49,7 @@
 	font-weight: var(--font-weight-semibold);
 }
 
-.experienceDot {
+.projectDot {
 	color: var(--color-text-muted);
 }
 
@@ -75,12 +84,12 @@
 /* Tablets */
 @media (min-width: 48rem) {
 	/* 768px */
-	.experienceItem {
+	.projectItem {
 		grid-template-columns: 9.5rem minmax(0, 1fr);
 		gap: var(--space-6);
 	}
 
-	.experienceTitle {
+	.projectTitle {
 		font-size: var(--font-lg);
 	}
 }

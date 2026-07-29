@@ -1,4 +1,4 @@
-import styles from "./Badge.module.css";
+import styles from "./ProjectBadge.module.css";
 import Image from "next/image";
 
 type project = {
@@ -9,7 +9,7 @@ type project = {
   image: string;
 };
 
-export default function Badge({ project }: { project: project }) {
+export default function ProjectBadge({ project }: { project: project }) {
   return (
     <a className={styles.badgeLink} href={project.website} target="_blank" rel="noopener noreferrer">
       <article className={styles.projectItem}>

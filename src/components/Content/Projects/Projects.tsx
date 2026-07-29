@@ -1,5 +1,5 @@
 import styles from './Projects.module.css';
-import Badge from './Badge';
+import ProjectBadge from './ProjectBadge';
 import { projects } from './projectsData';
 
 export default function Projects() {
@@ -9,7 +9,7 @@ export default function Projects() {
 
       <div className={styles.projectsContainer}>
         {projects.map((project) => (
-          <Badge key={project.title} project={project} />
+          <ProjectBadge key={project.title} project={project} />
         ))}
       </div>
     </section>

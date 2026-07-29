@@ -1,5 +1,5 @@
 import styles from './Experience.module.css';
-import Badge from './Badge';
+import ExperienceBadge from './ExperienceBadge';
 import { FiDownload } from "react-icons/fi";
 import { experiences } from './experienceData';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ export default function Experience() {
       <div className="divider" aria-hidden="true" />
 
       {experiences.map((experience) => (
-        <Badge key={experience.company} experience={experience} />
+        <ExperienceBadge key={experience.company} experience={experience} />
       ))}
 
       <Link

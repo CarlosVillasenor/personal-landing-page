@@ -1,4 +1,4 @@
-import styles from "./Badge.module.css";
+import styles from "./ExperienceBadge.module.css";
 
 type experience = {
   period: string;
@@ -10,7 +10,7 @@ type experience = {
   website: string;
 };
 
-export default function Badge({ experience }: { experience: experience }) {
+export default function ExperienceBadge({ experience }: { experience: experience }) {
   return (
     <a className={styles.badgeLink} href={experience.website} target="_blank" rel="noopener noreferrer">
       <article className={styles.experienceItem}>
