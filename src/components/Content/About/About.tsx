@@ -16,7 +16,7 @@ export default function About() {
       </div>
 
       <p className={styles.paragraph}>
-        Hi! I'm a Senior Frontend Developer with over 7 years of experience building modern,
+        Hi! I'm a Software Engineer - Frontend with over 7 years of experience building modern,
         high-performance web applications. I specialize in React and scalable frontend
         architecture, with a strong focus on performance, code quality, accessibility,
         and exceptional user experiences.

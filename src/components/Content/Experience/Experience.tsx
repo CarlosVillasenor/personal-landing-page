@@ -1,5 +1,6 @@
 import styles from './Experience.module.css';
 import Badge from './Badge';
+import { FiDownload } from "react-icons/fi";
 import { experiences } from './experienceData';
 import Link from 'next/link';
 
@@ -17,7 +18,7 @@ export default function Experience() {
         href="https://drive.google.com/file/d/18Qc_ML2Qe_o3uofCgg6PzFY7oSK-CdqT/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer">
-        <span>Get Curriculum Vitae</span>
+        <span>Get Curriculum Vitae <FiDownload className={styles.downloadIcon} /></span>
       </Link>
     </section>
   );

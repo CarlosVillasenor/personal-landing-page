@@ -21,7 +21,7 @@ export default function Header() {
           </h1>
 
           <p className={styles.role}>
-            Senior Frontend Developer
+            Software Engineer - Frontend
           </p>
 
           <p className={styles.pitch}>
