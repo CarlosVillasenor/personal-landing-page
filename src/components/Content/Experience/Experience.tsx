@@ -15,7 +15,7 @@ export default function Experience() {
 
       <Link
         className={styles.cvLink}
-        href="https://drive.google.com/file/d/18Qc_ML2Qe_o3uofCgg6PzFY7oSK-CdqT/view?usp=drive_link"
+        href="https://drive.google.com/file/d/19GdgVSOtf9Alwa8JqhC7FEyuxbbkPRzu/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer">
         <span>Get Curriculum Vitae <FiDownload className={styles.downloadIcon} /></span>
