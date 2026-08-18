@@ -23,6 +23,13 @@ export const projects: Project[] = [
     image: "nextlevel-food.png"
   },
   {
+    title: "Management React Project",
+    description: "A basic react management app to create a set of \"projects\" as a goal represented with cards with title, description, due date & a set of tasks to complete.",
+    technologies: ["React", "Tailwind CSS", "React Context", "JavaScript"],
+    website: "https://management-react-project.vercel.app/",
+    image: "management-react-project.png"
+  },
+  {
     title: "Puertas Automaticas Castillo",
     description: "Responsive business landing page for an startup company built with HTML5, SCSS, Bootstrap, JavaScript, and jQuery.",
     technologies: ["HTML5", "CSS3", "JavaScript", "SCSS", "Bootstrap", "jQuery", "Gulp"],
