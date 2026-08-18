@@ -21,5 +21,12 @@ export const projects: Project[] = [
     technologies: ["React", "Next.js", "Tailwind CSS", "BetterSQLite"],
     website: "https://onwards-foodies-project.vercel.app/",
     image: "nextlevel-food.png"
+  },
+  {
+    title: "Puertas Automaticas Castillo",
+    description: "Responsive business landing page for an startup company built with HTML5, SCSS, Bootstrap, JavaScript, and jQuery.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "SCSS", "Bootstrap", "jQuery", "Gulp"],
+    website: "https://pac-landing-page-plum.vercel.app/",
+    image: "puertas-automaticas-castillo.png"
   }
 ];
