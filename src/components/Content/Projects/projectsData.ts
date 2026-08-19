@@ -13,34 +13,76 @@ export const projects: Project[] = [
       "Spatial Navigation in Video.js enhances user experience and accessibility on smart TV devices. This functionality enables seamless navigation through interactive elements within the player using remote control arrow keys.",
     technologies: ["Javascript", "Typescript"],
     website: "https://legacy.videojs.org/guides/spatial-navigation/",
-    image: "spatial-navigation.png"
+    image: "spatial-navigation.png",
   },
   {
     title: "NextLevel Food",
-    description: "NextLevel Food is a platform for foodies to share their favorite recipes with the world. It's a place to discover new dishes, and to connect with other food lovers.",
+    description:
+      "NextLevel Food is a platform for foodies to share their favorite recipes with the world. It's a place to discover new dishes, and to connect with other food lovers.",
     technologies: ["React", "Next.js", "Tailwind CSS", "BetterSQLite"],
     website: "https://onwards-foodies-project.vercel.app/",
-    image: "nextlevel-food.png"
+    image: "nextlevel-food.png",
   },
   {
     title: "Management React Project",
-    description: "A basic react management app to create a set of \"projects\" as a goal represented with cards with title, description, due date & a set of tasks to complete.",
+    description:
+      'A basic react management app to create a set of "projects" as a goal represented with cards with title, description, due date & a set of tasks to complete.',
     technologies: ["React", "Tailwind CSS", "React Context", "JavaScript"],
     website: "https://management-react-project.vercel.app/",
-    image: "management-react-project.png"
+    image: "management-react-project.png",
   },
   {
     title: "Puertas Automaticas Castillo",
-    description: "Responsive business landing page for an startup company built with HTML5, SCSS, Bootstrap, JavaScript, and jQuery.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "SCSS", "Bootstrap", "jQuery", "Gulp"],
+    description:
+      "Responsive business landing page for an startup company built with HTML5, SCSS, Bootstrap, JavaScript, and jQuery.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "SCSS",
+      "Bootstrap",
+      "jQuery",
+      "Gulp",
+    ],
     website: "https://pac-landing-page-plum.vercel.app/",
-    image: "puertas-automaticas-castillo.png"
+    image: "puertas-automaticas-castillo.png",
   },
   {
     title: "Tic Tac Toe Game",
-    description: "A classic Tic Tac Toe game, building this project helped me to improve my React skills and learn about state management, component structure, and event handling.",
+    description:
+      "A classic Tic Tac Toe game, building this project helped me to improve my React skills and learn about state management, component structure, and event handling.",
     technologies: ["React", "Vite", "JavaScript", "CSS"],
     website: "https://tic-tac-toe-react-project-woad.vercel.app/",
-    image: "tic-tac-toe-game.png"
-  }
+    image: "tic-tac-toe-game.png",
+  },
+  {
+    title: "Personal Landing Page Draft",
+    description:
+      "First Draft of a personal landing page built to showcase my experience, skills, and frontend development projects using a modern responsive design.",
+    technologies: ["Next.js", "React", "TypeScript", "Lucide React"],
+    website: "https://personal-landing-page-draft.vercel.app/",
+    image: "personal-landing-page-draft.png",
+  },
+  {
+    title: "Timer Challenge",
+    description:
+      "A small timer game built with React to practice managing interactive UI with React refs and portals.",
+    technologies: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "React Refs",
+      "React Portals",
+    ],
+    website: "https://timer-challenge-react-project.vercel.app/",
+    image: "timer-challenge.png",
+  },
+  {
+    title: "Investment Calculator",
+    description:
+      "A React investment calculator that calculates and displays investment value, interest, and total interest over a custom number of years.",
+    technologies: ["React", "Vite", "JavaScript", "CSS"],
+    website: "https://investment-calculator-react-project-six.vercel.app/",
+    image: "investment-calculator.png",
+  },
 ];
