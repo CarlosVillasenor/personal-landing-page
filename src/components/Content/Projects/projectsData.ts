@@ -35,5 +35,12 @@ export const projects: Project[] = [
     technologies: ["HTML5", "CSS3", "JavaScript", "SCSS", "Bootstrap", "jQuery", "Gulp"],
     website: "https://pac-landing-page-plum.vercel.app/",
     image: "puertas-automaticas-castillo.png"
+  },
+  {
+    title: "Tic Tac Toe Game",
+    description: "A classic Tic Tac Toe game, building this project helped me to improve my React skills and learn about state management, component structure, and event handling.",
+    technologies: ["React", "Vite", "JavaScript", "CSS"],
+    website: "https://tic-tac-toe-react-project-woad.vercel.app/",
+    image: "tic-tac-toe-game.png"
   }
 ];
