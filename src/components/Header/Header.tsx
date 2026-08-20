@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 import Image from "next/image";
 import { navigationItems, socialLinks } from "./headerData";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import AnimatedText from "@/components/Animated/AnimatedText/AnimatedText";
 
 export default function Header() {
   const activeSection = useActiveSection();
@@ -21,12 +22,16 @@ export default function Header() {
           </h1>
 
           <p className={styles.role}>
-            Software Engineer - Frontend
+            <AnimatedText delay={0.1}>
+              Software Engineer - Frontend
+            </AnimatedText>
           </p>
 
           <p className={styles.pitch}>
-            I build fast, accessible and scalable web applications with clean code
-            and great user experiences.
+            <AnimatedText delay={0.07} startDelay={0.5}>
+              I build fast, accessible and scalable web applications with clean
+              code and great user experiences.
+            </AnimatedText>
           </p>
         </div>
 
@@ -51,7 +56,12 @@ export default function Header() {
         <footer className={styles.socials} aria-label="Social links">
           {socialLinks.map((link) => (
             <a key={link.label} href={link.href} aria-label={link.label}>
-              <Image src={`/tech-icons/${link.label}.svg`} alt={link.label} width={24} height={24} />
+              <Image
+                src={`/tech-icons/${link.label}.svg`}
+                alt={link.label}
+                width={24}
+                height={24}
+              />
             </a>
           ))}
         </footer>

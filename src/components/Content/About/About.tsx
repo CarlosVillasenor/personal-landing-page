@@ -1,21 +1,21 @@
 import styles from "./About.module.css";
 import Image from "next/image";
-import AnimatedText from "@/components/Animated/AnimatedText/AnimatedText";
+import AnimatedOnScroll from "@/components/Animated/AnimatedOnScroll/AnimatedOnScroll";
 
 export default function About() {
   return (
     <section id="about" className={styles.section}>
-      <AnimatedText delay={0.02}>
-        <div className={styles.avatarStage}>
-          <Image
-            src="/avatar/avatar.png"
-            alt="About me"
-            width={140}
-            height={140}
-            className={styles.avatar}
-            loading="eager"
-          />
-        </div>
+      <div className={styles.avatarStage}>
+        <Image
+          src="/avatar/avatar.png"
+          alt="About me"
+          width={140}
+          height={140}
+          className={styles.avatar}
+          loading="eager"
+        />
+      </div>
+      <AnimatedOnScroll>
         <p className={styles.paragraph}>
           Hi! I am a Software Engineer - Frontend with over 7 years of
           experience building modern, high-performance web applications. I
@@ -23,6 +23,8 @@ export default function About() {
           focus on performance, code quality, accessibility, and exceptional
           user experiences.
         </p>
+      </AnimatedOnScroll>
+      <AnimatedOnScroll>
         <p className={styles.paragraph}>
           For four years, I helped develop the STV version of{" "}
           <a
@@ -38,7 +40,8 @@ export default function About() {
           and optimized the build process, cutting compilation times from 20
           minutes to less than 5 minutes.
         </p>
-
+      </AnimatedOnScroll>
+      <AnimatedOnScroll>
         <p className={styles.paragraph}>
           I have worked extensively with React, Redux, React Router, custom
           Hooks, and
@@ -64,17 +67,21 @@ export default function About() {
           </a>
           , which improved the user experience for Smart TV users.
         </p>
+      </AnimatedOnScroll>
+      <AnimatedOnScroll>
         <p className={styles.paragraph}>
           Earlier in my career, I maintained fintech web applications built with
           Django (Python), working across both frontend and backend features. I
           also developed a scholarship management platform from scratch using
           Polymer and Vue.js.
         </p>
+      </AnimatedOnScroll>
+      <AnimatedOnScroll>
         <p className={styles.paragraph}>
           My main hobbies include doing exercise, playing video games, listening
           to audiobooks, and painting Warhammer miniatures.
         </p>
-      </AnimatedText>
+      </AnimatedOnScroll>
     </section>
   );
 }
