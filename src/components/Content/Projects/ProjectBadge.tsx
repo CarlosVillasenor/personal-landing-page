@@ -1,5 +1,6 @@
 import styles from "./ProjectBadge.module.css";
 import Image from "next/image";
+import AnimatedOnScroll from "../../AnimatedOnScroll/AnimatedOnScroll";
 
 type project = {
   title: string;
@@ -11,10 +12,11 @@ type project = {
 
 export default function ProjectBadge({ project }: { project: project }) {
   return (
-    <a className={styles.badgeLink} href={project.website} target="_blank" rel="noopener noreferrer">
-      <article className={styles.projectItem}>
+    <AnimatedOnScroll>
+      <a className={styles.badgeLink} href={project.website} target="_blank" rel="noopener noreferrer">
+        <article className={styles.projectItem}>
         <div className={styles.projectHeader}>
-          <p className={styles.tittle}>{project.title}</p>
+          <p className={styles.title}>{project.title}</p>
           <Image
             src={`/project-images/${project.image}`}
             alt={project.title}
@@ -34,7 +36,8 @@ export default function ProjectBadge({ project }: { project: project }) {
             ))}
           </ul>
         </div>
-      </article>
-    </a>
-  )
+        </article>
+      </a>
+    </AnimatedOnScroll>
+  );
 }

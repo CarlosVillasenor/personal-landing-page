@@ -1,4 +1,5 @@
 import styles from "./ExperienceBadge.module.css";
+import AnimatedOnScroll from "../../AnimatedOnScroll/AnimatedOnScroll";
 
 type experience = {
   period: string;
@@ -10,34 +11,39 @@ type experience = {
   website: string;
 };
 
-export default function ExperienceBadge({ experience }: { experience: experience }) {
+export default function ExperienceBadge({
+  experience,
+}: {
+  experience: experience;
+}) {
   return (
-    <a className={styles.badgeLink} href={experience.website} target="_blank" rel="noopener noreferrer">
-      <article className={styles.experienceItem}>
-        <p className={styles.period}>{experience.period}</p>
+    <AnimatedOnScroll>
+      <a
+        className={styles.badgeLink}
+        href={experience.website}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <article className={styles.experienceItem}>
+          <p className={styles.period}>{experience.period}</p>
 
-        <div className={styles.experienceBody}>
-          <h3 className={styles.experienceTitle}>
-            {experience.role}
-            <span className={styles.experienceDot}>-</span>
-            <span
-              className={styles.companyLink}
-            >
-              {experience.company}
-            </span>
-          </h3>
+          <div className={styles.experienceBody}>
+            <h3 className={styles.experienceTitle}>
+              {experience.role}
+              <span className={styles.experienceDot}>-</span>
+              <span className={styles.companyLink}>{experience.company}</span>
+            </h3>
 
-          <p className={styles.paragraph}>
-            {experience.description}
-          </p>
+            <p className={styles.paragraph}>{experience.description}</p>
 
-          <ul className={styles.techList} aria-label="Tech stack">
-            {experience.technologies.map((tech) => (
-              <li key={tech}>{tech}</li>
-            ))}
-          </ul>
-        </div>
-      </article>
-    </a>
-  )
+            <ul className={styles.techList} aria-label="Tech stack">
+              {experience.technologies.map((tech) => (
+                <li key={tech}>{tech}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      </a>
+    </AnimatedOnScroll>
+  );
 }
