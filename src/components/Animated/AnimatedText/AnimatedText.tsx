@@ -16,7 +16,7 @@ interface AnimatedTextProps {
 
 const AnimatedText = ({
   children,
-  delay = 0.05,
+  delay = 0.03,
   duration = 0.35,
   startDelay = 0,
 }: AnimatedTextProps) => {

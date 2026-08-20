@@ -1,6 +1,6 @@
 import styles from "./ProjectBadge.module.css";
 import Image from "next/image";
-import AnimatedOnScroll from "../../AnimatedOnScroll/AnimatedOnScroll";
+import AnimatedOnScroll from "@/components/Animated/AnimatedOnScroll/AnimatedOnScroll";
 
 type project = {
   title: string;

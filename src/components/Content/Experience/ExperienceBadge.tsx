@@ -1,5 +1,5 @@
 import styles from "./ExperienceBadge.module.css";
-import AnimatedOnScroll from "../../AnimatedOnScroll/AnimatedOnScroll";
+import AnimatedOnScroll from "@/components/Animated/AnimatedOnScroll/AnimatedOnScroll";
 
 type experience = {
   period: string;
