@@ -1,0 +1,23 @@
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(8px);
+  animation-name: wordAppear;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wordAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
