@@ -24,7 +24,7 @@ export const projects: Project[] = [
     technologies: ["React", "Next.js", "Tailwind CSS", "BetterSQLite"],
     website: "https://onwards-foodies-project.vercel.app/",
     image: "nextlevel-food.png",
-    year: 2023,
+    year: 2026,
   },
   {
     title: "Management React Project",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     technologies: ["React", "Tailwind CSS", "React Context", "JavaScript"],
     website: "https://management-react-project.vercel.app/",
     image: "management-react-project.png",
-    year: 2023,
+    year: 2026,
 
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     ],
     website: "https://pac-landing-page-plum.vercel.app/",
     image: "puertas-automaticas-castillo.png",
-    year: 2023,
+    year: 2018,
   },
   {
     title: "Tic Tac Toe Game",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     technologies: ["React", "Vite", "JavaScript", "CSS"],
     website: "https://tic-tac-toe-react-project-woad.vercel.app/",
     image: "tic-tac-toe-game.png",
-    year: 2023,
+    year: 2025,
   },
   {
     title: "Personal Landing Page Draft",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "React", "TypeScript", "Lucide React"],
     website: "https://personal-landing-page-draft.vercel.app/",
     image: "personal-landing-page-draft.png",
-    year: 2023,
+    year: 2026,
   },
   {
     title: "Timer Challenge",
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     ],
     website: "https://timer-challenge-react-project.vercel.app/",
     image: "timer-challenge.png",
-    year: 2023,
+    year: 2025,
   },
   {
     title: "Investment Calculator",
@@ -93,6 +93,6 @@ export const projects: Project[] = [
     technologies: ["React", "Vite", "JavaScript", "CSS"],
     website: "https://investment-calculator-react-project-six.vercel.app/",
     image: "investment-calculator.png",
-    year: 2023,
+    year: 2026,
   },
 ];

@@ -9,7 +9,7 @@ import { FiArrowLeft } from "react-icons/fi";
 export default function Projects() {
     return (
         <main className={styles.page}>
-            <Link href="/" className={styles.backLink}>
+            <Link href="/" className={"contentLink " + styles.backLink}>
                 <FiArrowLeft aria-hidden="true" />
                 Back to home
             </Link>

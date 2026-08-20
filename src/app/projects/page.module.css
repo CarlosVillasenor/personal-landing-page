@@ -10,10 +10,7 @@
 	display: inline-flex;
 	align-items: center;
 	gap: var(--space-2);
-	margin-bottom: var(--space-3);
-	color: var(--color-primary);
-	font-size: var(--font-xs);
-	font-weight: var(--font-weight-medium);
+	margin-bottom: var(--space-5);
 }
 
 .backLink svg {
@@ -103,6 +100,7 @@
 	font-size: 0.6875rem;
 	line-height: 1.55;
 	-webkit-box-orient: vertical;
+	line-clamp: 3;
 	-webkit-line-clamp: 3;
 }
 
