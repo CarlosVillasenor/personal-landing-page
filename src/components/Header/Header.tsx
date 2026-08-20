@@ -16,19 +16,21 @@ export default function Header() {
       <div className={styles.content}>
         <div className={styles.identity}>
           <h1 className={styles.name}>
-            Carlos
-            <br />
-            Villaseñor
+            <AnimatedText delay={0.3}>
+              Carlos
+              <br />
+              Villaseñor
+            </AnimatedText>
           </h1>
 
           <p className={styles.role}>
-            <AnimatedText delay={0.1}>
+            <AnimatedText delay={0.1} startDelay={0.5}>
               Software Engineer - Frontend
             </AnimatedText>
           </p>
 
           <p className={styles.pitch}>
-            <AnimatedText delay={0.07} startDelay={0.5}>
+            <AnimatedText delay={0.05} startDelay={1}>
               I build fast, accessible and scalable web applications with clean
               code and great user experiences.
             </AnimatedText>
