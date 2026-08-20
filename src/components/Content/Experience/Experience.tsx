@@ -14,7 +14,7 @@ export default function Experience() {
       ))}
 
       <Link
-        className={styles.cvLink}
+        className={"contentLink " + styles.cvLink}
         href="https://drive.google.com/file/d/19GdgVSOtf9Alwa8JqhC7FEyuxbbkPRzu/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer">

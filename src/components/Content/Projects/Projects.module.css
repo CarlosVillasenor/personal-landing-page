@@ -1,3 +1,7 @@
 .section {
   margin-bottom: var(--space-12);
 }
+
+.projectsLink {
+  margin-bottom: var(--space-5);
+}

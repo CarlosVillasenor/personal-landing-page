@@ -64,3 +64,15 @@ a {
 	background: var(--color-border);
 	margin-bottom: var(--space-11);
 }
+
+.contentLink {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  display: inline-block;
+  width: fit-content;
+}
+
+.contentLink:hover {
+  color: var(--color-primary-hover);
+}
