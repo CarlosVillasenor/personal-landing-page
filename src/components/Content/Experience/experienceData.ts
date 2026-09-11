@@ -10,7 +10,7 @@ type Experience = {
 
 export const experiences: Experience[] = [
   {
-    period: "Dec 2019 — Dec 2024",
+    period: "Dec 2019 — Jun 2025",
     company: "Brightcove",
     role: "Software Engineer",
     description:
